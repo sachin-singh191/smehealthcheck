@@ -1,0 +1,217 @@
+
+.applicationForm {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 40px;
+  border-left: 2px solid #6200ee;
+}
+
+.stepNumber {
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  background-color: #6200ee;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.formSection {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 4px;
+  color: #333;
+}
+
+.formSection h2 {
+  color: #6200ee;
+  margin-bottom: 10px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.checkboxField {
+  margin-right: 10px;
+}
+
+.termsLabel {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.termsList {
+  list-style: none;
+  padding-left: 0;
+  color: #777;
+}
+
+.termsList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.termsList li a {
+  color: #6200ee;
+  text-decoration: none;
+}
+
+.termsList li a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  background-color: #6200ee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #3700b3;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.documentUpload {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.uploadArea {
+  border: 2px dashed #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.fileInputArea {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: 14px;
+  color: #666;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.instructions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.instructions li {
+  padding: 5px 0;
+  border-left: 3px solid #6200ee;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.fileChip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 16px;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.fileChip .closeIcon {
+  margin-left: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.fileChip .fileName {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileChip.success {
+  background-color: #c8e6c9;
+}
+
+.fileChip.error {
+  background-color: #ffcdd2;
+  color: #d32f2f;
+}
+
+.autoSaveSelector {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.autoSaveSelector span {
+  margin-right: 10px;
+}
+
+.autoSaveSelector button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.autoSaveSelector button.active {
+  background-color: #6200ee;
+  color: white;
+}
